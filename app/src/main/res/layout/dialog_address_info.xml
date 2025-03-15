@@ -1,22 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:contentDescription="@string/app_logo"
+        android:src="@drawable/logo_first" />
+
+    <!-- Adres Başlığı -->
     <TextView
         android:id="@+id/tvAddressTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/address_info"
+        android:text="@string/address_title"
         android:textAppearance="?attr/textAppearanceHeadline6"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="8dp" />
 
+    <!-- Adres İçeriği -->
     <TextView
         android:id="@+id/tvAddressContent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?attr/textAppearanceBody1" />
+        android:textAppearance="?attr/textAppearanceBody1"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Kapat Butonu -->
+    <Button
+        android:id="@+id/btnClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/close"
+        style="@style/Widget.MaterialComponents.Button" />
 
 </LinearLayout> 

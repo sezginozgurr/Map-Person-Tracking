@@ -15,4 +15,7 @@
     <string name="address_not_found">Adres bulunamadı</string>
     <string name="background_location_permission_title">Arka planda konum izni</string>
     <string name="background_location_permission_message">Uygulamanın arka planda çalışırken de konumunuzu takip edebilmesi için arka plan konum iznini vermeniz gerekiyor.</string>
+    <string name="address_title">Adres</string>
+    <string name="close">Kapat</string>
+    <string name="app_logo">Uygulama Logosu</string>
 </resources>

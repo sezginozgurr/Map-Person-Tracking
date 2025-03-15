@@ -285,12 +285,26 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
     
     private fun showAddressDialog(address: String) {
         val dialogBinding = DialogAddressInfoBinding.inflate(layoutInflater)
+        
+        // Logo ekleme
+        dialogBinding.ivLogo.setImageResource(R.drawable.logo_second)
+        
+        // Adres başlığı ve içeriği
+        dialogBinding.tvAddressTitle.text = getString(R.string.address_title)
         dialogBinding.tvAddressContent.text = address.ifEmpty { getString(R.string.address_not_found) }
         
-        AlertDialog.Builder(this)
+        // Dialog oluşturma
+        val dialog = AlertDialog.Builder(this)
             .setView(dialogBinding.root)
-            .setPositiveButton(android.R.string.ok, null)
-            .show()
+            .setCancelable(true) // Arka plana tıklayınca kapanabilir
+            .create()
+        
+        // Kapat butonu işlevselliği
+        dialogBinding.btnClose.setOnClickListener {
+            dialog.dismiss()
+        }
+        
+        dialog.show()
     }
 
     companion object {
