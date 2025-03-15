@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">PersonTrackingApp</string>
+    <string name="location_channel_name">Konum Takibi</string>
+    <string name="location_channel_description">Konum takibi için bildirim kanalı</string>
+    <string name="location_notification_title">Konum Takibi Aktif</string>
+    <string name="location_notification_text">Konumunuz takip ediliyor</string>
+    <string name="start_tracking">Takibi Başlat</string>
+    <string name="stop_tracking">Takibi Durdur</string>
+    <string name="clear_route">Rotayı Temizle</string>
+    <string name="permission_required">Konum izni gerekli</string>
+    <string name="permission_rationale">Bu uygulama konumunuzu takip etmek için konum izinlerine ihtiyaç duyar.</string>
+    <string name="settings">Ayarlar</string>
+    <string name="cancel">İptal</string>
+    <string name="address_info">Adres Bilgisi</string>
+    <string name="address_not_found">Adres bulunamadı</string>
+    <string name="background_location_permission_title">Arka planda konum izni</string>
+    <string name="background_location_permission_message">Uygulamanın arka planda çalışırken de konumunuzu takip edebilmesi için arka plan konum iznini vermeniz gerekiyor.</string>
 </resources>
